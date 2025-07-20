@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytest = {version = "*", editable = true, extras = ["cli"]}
+sqlalchemy = "*"
+click = "*"
+python-dateutil = "*"
+
+[dev-packages]
+pytest = "*"
+
+[scripts]
+tracker = "python tracker.py"
+add-expense = "python tracker.py add"
+list-expenses = "python tracker.py list"
+summary = "python tracker.py summary"
+init-db = "python init_db.py"
